@@ -1,0 +1,26 @@
+service: samplelambda
+frameworkVersion: "2"
+
+provider:
+  name: aws
+  runtime: go1.x
+  lambdaHashingVersion: 20201221
+  stage: dev
+  region: eu-west-1
+
+package:
+  patterns:
+    - "!./**"
+    - ./bin/**
+
+functions:
+  hello:
+    handler: bin/hello
+    events:
+      - httpApi:
+          path: /hello
+          method: get
+    environment:
+      #thundra_apiKey: <your_thundra_ApiKey> 
+      thundra_lambda_debug_enable: true
+      thundra_agent_lambda_debug_enable	: true
