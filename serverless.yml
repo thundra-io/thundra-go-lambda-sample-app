@@ -23,4 +23,4 @@ functions:
     environment:
       #thundra_apiKey: <your_thundra_ApiKey> 
       thundra_lambda_debug_enable: true
-      thundra_agent_lambda_debug_enable	: true
+      thundra_agent_lambda_debug_enable: true
