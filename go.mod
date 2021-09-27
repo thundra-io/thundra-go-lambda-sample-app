@@ -2,7 +2,7 @@ module github.com/go/sampleLambda
 
 go 1.17
 
-// Uncomment below line after you had cloned thundra-lamga-agent-go to this project's root directory
+// Uncomment below line after you had cloned thundra-lambda-agent-go to this project's root directory
 // replace github.com/thundra-io/thundra-lambda-agent-go/v2 => ./thundra-lambda-agent-go
 
 require (
